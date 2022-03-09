@@ -10,7 +10,6 @@ class Register{
 
     save(){
        //save user to database
-       
        var sql = `
         INSERT INTO users(
             username,
@@ -33,8 +32,6 @@ class Register{
            }
     });
     }
-
 }
-
 
 module.exports = Register;
