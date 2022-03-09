@@ -1,6 +1,6 @@
 {
   "name": "nodemvctemplatetest",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "To instantiate this template write \"npx create-nodemvctemplate appName\"",
   "bin": {
     "nodemvctemplate": "bin/cli.js"

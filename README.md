@@ -1,6 +1,6 @@
 # NodeMVCTemplate
 
-To instantiate this template write "npx create-nodemvctemplate appName"
+To instantiate this template write "npx nodemvctemplate appName"
 
 This template for model view controllers using Node, express and MySQL.
 
