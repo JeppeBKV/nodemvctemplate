@@ -21,4 +21,6 @@ We are currently working on adding middleware via passport.js
 We are working on making this available from npm :)
 
 Creators on this project are:
-
+@edvardxyz
+@thegronne
+@jeppebkv
