@@ -15,9 +15,6 @@ app.use(expressLayouts);
 app.set('layout', './layouts/full-width');
 app.set('view engine', 'ejs');
 
-
-
-
 //Routes
 app.use('/', require('./routes/index'));
 const PORT = process.env.port || 3308;

@@ -1,15 +1,17 @@
 {
-  "name": "nodemcvtemplate",
-  "version": "1.0.0",
-  "description": "",
-  "bin": "./.bin/cli.js",
+  "name": "mvc-temp",
+  "version": "1.1.1",
+  "description": "To instantiate this template write \"npx create-nodemvctemplate appName\"",
+  "bin": {
+    "nodemvctemplate": "bin/cli.js"
+  },
   "main": "app.js",
   "scripts": {
     "develop": "node app.js",
     "dev": "nodemon app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "jeppebkv",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.0",
@@ -18,5 +20,14 @@
     "express-ejs-layouts": "^2.5.1",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.15"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeppeBKV/nodemvctemplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JeppeBKV/nodemvctemplate/issues"
+  },
+  "homepage": "https://github.com/JeppeBKV/nodemvctemplate#readme"
 }
