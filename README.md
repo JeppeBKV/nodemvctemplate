@@ -1,7 +1,8 @@
 # NodeMVCTemplate
 
-This template for model view controllers using Node, express and MySQL.
+To instantiate this template write "npx create-nodemvctemplate appName"
 
+This template for model view controllers using Node, express and MySQL.
 
 app.js is server
 
