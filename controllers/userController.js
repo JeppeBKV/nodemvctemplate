@@ -8,7 +8,7 @@ const loginView = (req, res) => {
 const registerView = (req, res) => {
     res.render("register", { title: 'Register', layout: './layouts/sidebar' });
 }
- //ok
+
 module.exports = {
     loginView,
     registerView
