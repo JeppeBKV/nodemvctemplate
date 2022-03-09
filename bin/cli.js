@@ -50,11 +50,10 @@ async function main () {
         execSync('npm install');
         execSync('npm install --save-dev');
   
-        // console.log('Removing useless files');
-        // execSync('npx rimraf ./.git');
-        // fs.unlinkSync('./controllers/.gitkeep');
-        // fs.unlinkSync('./routes/.gitkeep');
-        fs.rmdirSync(path.join(projectPath, 'bin'), { recursive: true});
+        console.log('Removing useless files');
+        fs.rmSync(path.join(projectPath, './.git'), { recursive: true });
+
+        fs.rmSync(path.join(projectPath, 'bin'), { recursive: true });
   
         console.log('The installation is done, this is ready to use !');
   
