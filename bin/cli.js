@@ -7,7 +7,7 @@ const fs = require('fs');
 if (process.argv.length < 3) {
     console.log('Remember to give project name.');
     console.log('For example :');
-    console.log('    npx create-nodemvctemplate YOUR-PROJECT-NAME');
+    console.log('    npx mvc-temp appName');
     process.exit(1);
 }
 
