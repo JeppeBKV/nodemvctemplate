@@ -8,6 +8,7 @@ const app = express();
 
 // Middleware used to access form data submitted with post method in req.body
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 // Static files folder
 app.use(express.static('public'));
 
@@ -17,5 +18,5 @@ app.set('view engine', 'ejs');
 
 //Routes
 app.use('/', require('./routes/index'));
-const PORT = process.env.port || 3308;
+const PORT = process.env.PORT;
 app.listen(PORT, console.log("Server has started at port " + PORT));
