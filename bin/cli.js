@@ -16,7 +16,7 @@ const currentPath = process.cwd();
 const projectPath = path.join(currentPath, projectName).replace(/ /g, "\\\ ");
 console.log( '/////////////////////' )
 
-console.log(projectPath);
+console.log(typeof projectPath);
 
 console.log( '/////////////////////' )
 const git_repo = 'https://github.com/JeppeBKV/nodemvctemplate/';
