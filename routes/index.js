@@ -1,9 +1,10 @@
-const express = require('express');
+const router = require('express').Router();
+const passport = require('passport');
+const {isAuth, isAdmin} = require('./authMiddleware');
 
 const { indexView } = require('../controllers/indexController');
 const { loginView, registerView } = require('../controllers/userController');
 const { loginVerify, registerVerify } = require('../controllers/verifyController')
-const router = express.Router();
 
 router.get('/login', loginView);
 router.get('/register', registerView);
