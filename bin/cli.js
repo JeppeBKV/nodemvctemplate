@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const { execSync } = require('child_process');
+const { execSync, spawn, spawnSync } = require('child_process');
 const path = require('path');
 const fs = require('fs');
 
@@ -13,7 +13,7 @@ if (process.argv.length < 3) {
 
 const projectName = process.argv[2];
 const currentPath = process.cwd();
-const projectPath = path.join(currentPath, projectName);
+const projectPath = path.join(currentPath, projectName).replace(/ /g, "\\\ ");
 const git_repo = 'https://github.com/JeppeBKV/nodemvctemplate/';
 
 try {
@@ -30,7 +30,7 @@ try {
 async function main () {
     try {
         console.log('Downloading files...');
-        execSync(`git clone --depth 1 ${git_repo}` + '\'' + projectPath + '\'');
+        execSync(`git clone --depth 1 ${git_repo} ${projectPath}`);
   
         process.chdir(projectPath);
   
