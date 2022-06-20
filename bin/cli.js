@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const { execSync, spawn, spawnSync } = require('child_process');
+const { execSync } = require('child_process');
 const path = require('path');
 const fs = require('fs');
 
@@ -13,12 +13,7 @@ if (process.argv.length < 3) {
 
 const projectName = process.argv[2];
 const currentPath = process.cwd();
-const projectPath = path.join(currentPath, projectName).replace(/ /g, "\\\ ");
-console.log( '/////////////////////' )
-
-console.log(typeof projectPath);
-
-console.log( '/////////////////////' )
+const projectPath = path.join(currentPath, projectName);
 const git_repo = 'https://github.com/JeppeBKV/nodemvctemplate/';
 
 try {
